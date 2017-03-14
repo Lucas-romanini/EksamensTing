@@ -1,0 +1,41 @@
+﻿.div {
+  width: 100px;
+}
+.div2 {
+  width: 100px;
+  height: 100px;
+}
+div {
+  background-color: #323232;
+  background-color: #000000;
+  background-color: #656565;
+  background-color: #989898;
+  background-color: #e5e5e5;
+}
+.column-1 {
+  width: 20%;
+}
+.column-2 {
+  width: 40%;
+}
+.column-3 {
+  width: 60%;
+}
+.column-4 {
+  width: 80%;
+}
+.column-5 {
+  width: 100%;
+}
+div {
+  width: 30px;
+}
+div .class1 {
+  width: 10px;
+}
+div .class1 p {
+  color: red;
+}
+div .class2 {
+  width: 20px;
+}

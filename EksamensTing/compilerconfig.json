@@ -1,0 +1,14 @@
+﻿[
+  {
+    "outputFile": "StyleSheet1.css",
+    "inputFile": "StyleSheet1.less"
+  },
+  {
+    "outputFile": "less.css",
+    "inputFile": "less.less"
+  },
+  {
+    "outputFile": "Sass.css",
+    "inputFile": "Sass.scss"
+  }
+]

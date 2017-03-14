@@ -1,0 +1,84 @@
+﻿@red:#ff0000;
+
+
+
+
+
+.div{
+    width:100px;
+}
+
+.div2{
+    .div;
+    height:100px;
+}
+
+
+@grey: #323232;
+@grey-dark: darken(@grey,20%);
+@grey-light: lighten(@grey, 20%);
+@grey-lighter: lighten(@grey-light, 20%);
+@grey-lightest: lighten(@grey-lighter, 30%);
+
+div{
+    background-color:@grey;
+    background-color:@grey-dark;
+    background-color:@grey-light;
+    background-color:@grey-lighter;
+    background-color:@grey-lightest;
+}
+
+
+.generate-columns(5);
+
+.generate-columns(@n, @i: 1) when (@i =< @n) {
+  .column-@{i} {
+    width: (@i * 100% / @n);
+  }
+  .generate-columns(@n, (@i + 1));
+}
+
+div{
+    width:30px;
+    .class1{
+        width:10px;
+        p{
+            color:red;
+        }
+    }
+    .class2{
+        width:20px;
+    }
+}
+
+
+
+border-radius(n)
+  -webkit-border-radius n
+  -moz-border-radius n
+  border-radius n
+
+form input[type=button]
+  border-radius 5px
+
+
+form input[type=button] {
+  -webkit-border-radius: 5px;
+  -moz-border-radius: 5px;
+  border-radius: 5px;
+}
+
+@mixin display-font {
+  font-family: "Arial Black", sans-serif;
+  font-size: #(0); 
+  letter-spacing: #(1);
+}
+.foo {
+  @include display-font(100%, .1em), blue-theme;
+}
+
+.foo {
+  font-family: "Arial Black", sans-serif;
+  font-size: 100%;
+  letter-spacing: .1em;
+}

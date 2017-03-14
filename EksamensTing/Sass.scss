@@ -1,0 +1,18 @@
+﻿body {
+}
+
+$red:#ff0000;
+
+@mixin border-radius {
+    -moz-border-radius: 10px;
+    -webkit-border-radius: 10px;
+    border-radius: 10px;
+}
+
+div{
+    @include border-radius;
+    width:30px;
+    background-color:$red;
+}
+
+
